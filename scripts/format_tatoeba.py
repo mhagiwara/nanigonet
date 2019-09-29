@@ -16,10 +16,9 @@ def main():
     nanigonet_id_to_file = {}
 
     with open('data/sentences.csv') as f:
-        reader = csv.reader(f, delimiter='\t')
-        for row in reader:
-            tatoeba_id = row[1]
-            text = row[2]
+        for line in f:
+            _, tatoeba_id, text = line.rstrip().split('\t', maxsplit=2)
+
             if tatoeba_id not in tatoeba_to_nanigonet_id:
                 continue
 
@@ -32,7 +31,8 @@ def main():
                 nanigonet_id_to_file[nanigonet_id] = f
 
             f = nanigonet_id_to_file[nanigonet_id]
-            f.write(text + '\n')
+            f.write(text)
+            f.write('\n')
 
     for f in nanigonet_id_to_file.values():
         f.close()
