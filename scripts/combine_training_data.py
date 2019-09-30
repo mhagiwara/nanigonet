@@ -1,9 +1,9 @@
-from nanigonet.language_info import LanguageInfo
-
 import json
+import os
 import sys
 from pathlib import Path
-import os
+
+from nanigonet.language_info import LanguageInfo
 
 TRAIN_DIR = Path('data/train')
 
