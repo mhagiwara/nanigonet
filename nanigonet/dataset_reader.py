@@ -8,6 +8,8 @@ from allennlp.data.tokenizers import Token, Tokenizer, CharacterTokenizer
 from allennlp.data.fields import TextField, SequenceLabelField
 
 
+MAX_TOKEN_LEN = 1024
+
 @DatasetReader.register('nanigonet')
 class NanigoNetDatasetReader(DatasetReader):
 
@@ -21,6 +23,13 @@ class NanigoNetDatasetReader(DatasetReader):
         self._token_indexers = token_indexers or {'tokens': SingleIdTokenIndexer()}
 
     def text_to_instance(self, tokens: List[Token], tags: List[str]=None) -> Instance:
+
+        if len(tokens) > MAX_TOKEN_LEN:
+            tokens = tokens[:MAX_TOKEN_LEN]
+            print(f'Length of tokens exceeded the limit {MAX_TOKEN_LEN}. Truncating...')
+            if tags:
+                tags = tags[:MAX_TOKEN_LEN]
+
         fields = {}
 
         text_field = TextField(tokens, self._token_indexers)
@@ -37,10 +46,7 @@ class NanigoNetDatasetReader(DatasetReader):
             for line in f:
                 data = json.loads(line)
                 tokens = self._tokenizer.tokenize(data['text'])
-
-                # TOFIX: this assumes there's only single label.
-                lang_id = data['labels'][0]['langId']
-                tags = [lang_id] * len(tokens)
+                tags = data['labels']
 
                 yield self.text_to_instance(tokens, tags)
 

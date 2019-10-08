@@ -34,7 +34,7 @@
     },
     "iterator": {
         "type": "bucket",
-        "batch_size": 256,
+        "batch_size": 128,
         "sorting_keys": [["tokens", "num_tokens"]]
     },
 
@@ -43,7 +43,8 @@
             "type": "adam",
             "lr": 0.0005
         },
-        "num_epochs": 20,
+        "validation_metric": "+accuracy",
+        "num_epochs": 100,
         "patience": 10,
         "cuda_device": 0
     }

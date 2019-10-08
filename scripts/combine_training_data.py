@@ -62,7 +62,8 @@ def main():
                     labels.extend([partial_lang] * len(partial_line))
 
             assert len(text) == len(labels)
-            dataset.append((text, labels))
+            if text:
+                dataset.append((text, labels))
 
             last_split_i = i
             last_split_j = j
