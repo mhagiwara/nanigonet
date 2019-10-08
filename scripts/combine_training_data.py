@@ -39,7 +39,7 @@ def main():
     for i, (line, lang) in enumerate(lines_and_langs):
         for j in range(len(line) + 1):
             # split at position j means to split the text BEFORE text[j]
-            if random.random() >= 0.008:
+            if random.random() >= 0.01:
                 continue
 
             # make a split at [i, j]

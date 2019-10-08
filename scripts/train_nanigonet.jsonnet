@@ -34,7 +34,7 @@
     },
     "iterator": {
         "type": "bucket",
-        "batch_size": 128,
+        "batch_size": 96,
         "sorting_keys": [["tokens", "num_tokens"]]
     },
 

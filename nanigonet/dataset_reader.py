@@ -8,7 +8,7 @@ from allennlp.data.tokenizers import Token, Tokenizer, CharacterTokenizer
 from allennlp.data.fields import TextField, SequenceLabelField
 
 
-MAX_TOKEN_LEN = 1024
+MAX_TOKEN_LEN = 512
 
 @DatasetReader.register('nanigonet')
 class NanigoNetDatasetReader(DatasetReader):
