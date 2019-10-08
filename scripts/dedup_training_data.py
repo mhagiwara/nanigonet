@@ -16,12 +16,13 @@ def get_deduped_lines(file_path):
             line = line.strip()
             if not line:
                 continue
-            line = line[:256]
+            if len(line) > 1024:
+                continue
             lines.add(line)
 
     lines = list(lines)
     random.shuffle(lines)
-    lines = lines[:10000]
+    lines = lines[:1000]
 
     return lines
 

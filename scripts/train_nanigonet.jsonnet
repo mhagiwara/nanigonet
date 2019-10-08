@@ -2,7 +2,7 @@
     "dataset_reader": {
         "type": "nanigonet"
     },
-    "train_data_path": "data/train.mod5-0.jsonl",
+    "train_data_path": "data/train.jsonl",
     "validation_data_path": "data/dev.jsonl",
 
     "vocabulary" : {
@@ -27,6 +27,9 @@
             "type": "lstm",
             "input_size": 256,
             "hidden_size": 256,
+            "num_layers": 2,
+            "bidirectional": true,
+            "dropout": 0.5,
         }
     },
     "iterator": {
