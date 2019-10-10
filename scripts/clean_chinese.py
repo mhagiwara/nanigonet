@@ -1,5 +1,6 @@
 import langdetect
 from pathlib import Path
+from hanziconv import HanziConv
 
 TRAIN_DIR = Path('data/train')
 
@@ -24,9 +25,11 @@ def main():
                     continue
 
                 if lang in {'zh-tw', 'ko'}:
+                    text = HanziConv.toTraditional(text)
                     hant_file.write(text)
                     hant_file.write('\n')
                 elif lang == 'zh-cn':
+                    text = HanziConv.toSimplified(text)
                     hans_file.write(text)
                     hans_file.write('\n')
 
