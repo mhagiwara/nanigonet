@@ -1,151 +1,151 @@
-id	name	w2c	tatoeba	wikipedia
-afr	Afrikaans	afr	afr	
-amh	Amharic	amh	amh	
-ara	Arabic	ara	ara	
-arg	Aragonese	arg	arg	
-asm	Assamese		asm	
-ast	Asturian	ast	ast	
-aze	Azerbaijani	aze	aze	
-bak	Bashkir		bak	
-bcl	Central Bikol		bcl	
-bel	Belarusian	bel	bel	
-ben	Bengali	ben	ben	
-ber	Berber		ber	
-bod	Tibetan		bod	https://bo.wikipedia.org/
-bos	Bosnian	bos	bos	
-bpy	Bishnupriya	bpy		
-bre	Breton	bre	bre	
-bul	Bulgarian	bul	bul	
-cat	Catalan	cat	cat	
-ceb	Cebuano	ceb	ceb	
-ces	Czech	ces	ces	
-che	Chechen		che	
-chr	Cherokee		chr	
-chv	Chuvash	chv	chv	
-cos	Corsican	cos	cos	
-cym	Welsh	cym	cym	
-dan	Danish	dan	dan	
-deu	German	deu	deu	
-div	Maldivian			https://dv.wikipedia.org/
-ell	Modern Greek (1453-)	ell	ell	
-eng	English	eng	eng	
-epo	Esperanto	epo	epo	
-est	Estonian	est	est	
-eus	Basque	eus	eus	
-fao	Faroese	fao	fao	
-fas	Persian	fas	pes	
-fin	Finnish	fin	fin	
-fra	French	fra	fra	
-fry	Western Frisian	fry	fry	
-gla	Scottish Gaelic	gla	gla	
-gle	Irish	gle	gle	
-glg	Galician	glg	glg	
-gom	Konkani			https://gom.wikipedia.org/
-gsw	Swiss German		gsw	
-grn	Guarani		grn	https://gn.wikipedia.org/
-guj	Gujarati	guj	guj	
-hat	Haitian	hat	hat	
-haw	Hawaiian		haw	
-hbs	Serbo-Croatian	hbs	srp	
-heb	Hebrew	heb	heb	
-hif	Fiji Hindi	hif	hif	
-hin	Hindi	hin	hin	
-hrv	Croatian	hrv	hrv	
-hsb	Upper Sorbian	hsb	hsb	
-hun	Hungarian	hun	hun	
-hye	Armenian	hye	hye	
-ido	Ido	ido	ido	
-ilo	Ilocano		ilo	
-ina	Interlingua	ina	ina	
-ind	Indonesian	ind	ind	
-isl	Icelandic	isl	isl	
-ita	Italian	ita	ita	
-jav	Javanese	jav	jav	
-jpn	Japanese	jpn	jpn	
-kal	Greenlandic		kal	
-kan	Kannada	kan	kan	
-kas	Kashmiri		kas	
-kat	Georgian	kat	kat	
-kaz	Kazakh	kaz	kaz	
-khm	Khmer		khm	
-kir	Kyrgyz		kir	
-kor	Korean	kor	kor	
-kur	Kurdish	kur	kur	
-lat	Latin	lat	lat	
-lav	Latvian	lav	lvs	
-lim	Limburgan	lim		
-lit	Lithuanian	lit	lit	
-lmo	Lombard	lmo	lmo	
-ltz	Luxembourgish	ltz	ltz	
-lug	Luganda		lug	
-lus	Mizo			https://incubator.wikimedia.org/wiki/Wp/lus/Phekpui
-mal	Malayalam	mal	mal	
-mar	Marathi	mar	mar	
-min	Minangkabau		min	
-mkd	Macedonian	mkd	mkd	
-mlg	Malagasy	mlg	mlg	
-mlt	Maltese		mlt	
-mon	Mongolian	mon	mon	
-mri	Maori	mri	mri	
-msa	Malay	msa	zsm	
-mya	Burmese	mya	mya	
-nds	Low German	nds	nds	
-nep	Nepali	nep	npi	
-new	Newari	new		
-nld	Dutch	nld	nld	
-nno	Norwegian Nynorsk	nno	nno	
-nob	Norwegian Bokmål	nor	nob	
-nso	Northern Sotho			https://nso.wikipedia.org/
-oci	Occitan	oci	oci	
-ori	Odia		ori	
-oss	Ossetian	oss	oss	
-pam	Pampanga	pam	pam	
-pan	Indian Punjabi		pan	
-pms	Piemontese	pms	pms	
-pnb	Pakistani Punjabi		pnb	
-pol	Polish	pol	pol	
-por	Portuguese	por	por	
-pus	Pashto		pus	
-que	Quechua	que	que	
-roh	Romansh		roh	
-ron	Romanian	ron	ron	
-rus	Russian	rus	rus	
-san	Sanskrit		san	
-sah	Yakut	sah	sah	
-scn	Sicilian	scn	scn	
-sin	Sinhala		sin	
-sco	Scots	sco	sco	
-slk	Slovak	slk	slk	
-slv	Slovenian	slv	slv	
-sna	Shona		sna	
-som	Somali		som	
-spa	Spanish	spa	spa	
-sqi	Albanian	sqi	sqi	
-srp	Serbian	srp	srp	
-sun	Sundanese	sun	sun	
-swa	Swahili	swa	swh	
-swe	Swedish	swe	swe	
-tam	Tamil	tam	tam	
-tat	Tatar	tat	tat	
-tel	Telugu	tel	tel	
-tgk	Tajik	tgk	tgk	
-tgl	Tagalog	tgl	tgl	
-tha	Thai	tha	tha	
-ton	Tongan		ton	
-tur	Turkish	tur	tur	
-tlh	Klingon		tlh	
-uig	Uyghur		uig	
-ukr	Ukrainian	ukr	ukr	
-urd	Urdu	urd	urd	
-uzb	Uzbek	uzb	uzb	
-vec	Venetian	vec	vec	
-vie	Vietnamese	vie	vie	
-vol	Volapük	vol	vol	
-war	Waray	war	war	
-wln	Walloon	wln	wln	
-xho	Xhosa		xho	
-yid	Yiddish	yid	yid	
-yor	Yoruba	yor	yor	
-cmn-hans	Mandarin Chinese (simplified)	zho	cmn	
-cmn-hant	Mandarin Chinese (traditional)	zho	cmn	
-zul	Zulu		zul	
+id	name	rank	w2c	tatoeba	wikipedia
+afr	Afrikaans		afr	afr	
+amh	Amharic		amh	amh	
+ara	Arabic		ara	ara	
+arg	Aragonese		arg	arg	
+asm	Assamese			asm	
+ast	Asturian		ast	ast	
+aze	Azerbaijani		aze	aze	
+bak	Bashkir			bak	
+bcl	Central Bikol			bcl	
+bel	Belarusian		bel	bel	
+ben	Bengali	5	ben	ben	
+ber	Berber			ber	
+bod	Tibetan			bod	https://bo.wikipedia.org/
+bos	Bosnian		bos	bos	
+bpy	Bishnupriya		bpy		
+bre	Breton		bre	bre	
+bul	Bulgarian		bul	bul	
+cat	Catalan		cat	cat	
+ceb	Cebuano		ceb	ceb	
+ces	Czech		ces	ces	
+che	Chechen			che	
+chr	Cherokee			chr	
+chv	Chuvash		chv	chv	
+cos	Corsican		cos	cos	
+cym	Welsh		cym	cym	
+dan	Danish		dan	dan	
+deu	German	16	deu	deu	
+div	Maldivian				https://dv.wikipedia.org/
+ell	Modern Greek (1453-)		ell	ell	
+eng	English	3	eng	eng	
+epo	Esperanto		epo	epo	
+est	Estonian		est	est	
+eus	Basque		eus	eus	
+fao	Faroese		fao	fao	
+fas	Persian		fas	pes	
+fin	Finnish		fin	fin	
+fra	French	15	fra	fra	
+fry	Western Frisian		fry	fry	
+gla	Scottish Gaelic		gla	gla	
+gle	Irish		gle	gle	
+glg	Galician		glg	glg	
+gom	Konkani				https://gom.wikipedia.org/
+gsw	Swiss German			gsw	
+grn	Guarani			grn	https://gn.wikipedia.org/
+guj	Gujarati		guj	guj	
+hat	Haitian		hat	hat	
+haw	Hawaiian			haw	
+hbs	Serbo-Croatian		hbs	srp	
+heb	Hebrew		heb	heb	
+hif	Fiji Hindi		hif	hif	
+hin	Hindi	4	hin	hin	
+hrv	Croatian		hrv	hrv	
+hsb	Upper Sorbian		hsb	hsb	
+hun	Hungarian		hun	hun	
+hye	Armenian		hye	hye	
+ido	Ido		ido	ido	
+ilo	Ilocano			ilo	
+ina	Interlingua		ina	ina	
+ind	Indonesian		ind	ind	
+isl	Icelandic		isl	isl	
+ita	Italian	22	ita	ita	
+jav	Javanese	21	jav	jav	
+jpn	Japanese	8	jpn	jpn	
+kal	Greenlandic			kal	
+kan	Kannada		kan	kan	
+kas	Kashmiri			kas	
+kat	Georgian		kat	kat	
+kaz	Kazakh		kaz	kaz	
+khm	Khmer			khm	
+kir	Kyrgyz			kir	
+kor	Korean	14	kor	kor	
+kur	Kurdish		kur	kur	
+lat	Latin		lat	lat	
+lav	Latvian		lav	lvs	
+lim	Limburgan		lim		
+lit	Lithuanian		lit	lit	
+lmo	Lombard		lmo	lmo	
+ltz	Luxembourgish		ltz	ltz	
+lug	Luganda			lug	
+lus	Mizo				https://incubator.wikimedia.org/wiki/Wp/lus/Phekpui
+mal	Malayalam		mal	mal	
+mar	Marathi	10	mar	mar	
+min	Minangkabau			min	
+mkd	Macedonian		mkd	mkd	
+mlg	Malagasy		mlg	mlg	
+mlt	Maltese			mlt	
+mon	Mongolian		mon	mon	
+mri	Maori		mri	mri	
+msa	Malay		msa	zsm	
+mya	Burmese		mya	mya	
+nds	Low German		nds	nds	
+nep	Nepali		nep	npi	
+new	Newari		new		
+nld	Dutch		nld	nld	
+nno	Norwegian Nynorsk		nno	nno	
+nob	Norwegian Bokmål		nor	nob	
+nso	Northern Sotho				https://nso.wikipedia.org/
+oci	Occitan		oci	oci	
+ori	Odia			ori	
+oss	Ossetian		oss	oss	
+pam	Pampanga		pam	pam	
+pan	Indian Punjabi			pan	
+pms	Piemontese		pms	pms	
+pnb	Pakistani Punjabi	9		pnb	
+pol	Polish		pol	pol	
+por	Portuguese	6	por	por	
+pus	Pashto			pus	
+que	Quechua		que	que	
+roh	Romansh			roh	
+ron	Romanian		ron	ron	
+rus	Russian	7	rus	rus	
+san	Sanskrit			san	
+sah	Yakut		sah	sah	
+scn	Sicilian		scn	scn	
+sin	Sinhala			sin	
+sco	Scots		sco	sco	
+slk	Slovak		slk	slk	
+slv	Slovenian		slv	slv	
+sna	Shona			sna	
+som	Somali			som	
+spa	Spanish	2	spa	spa	
+sqi	Albanian		sqi	sqi	
+srp	Serbian		srp	srp	
+sun	Sundanese		sun	sun	
+swa	Swahili		swa	swh	
+swe	Swedish		swe	swe	
+tam	Tamil	18	tam	tam	
+tat	Tatar		tat	tat	
+tel	Telugu	11	tel	tel	
+tgk	Tajik		tgk	tgk	
+tgl	Tagalog		tgl	tgl	
+tha	Thai		tha	tha	
+ton	Tongan			ton	
+tur	Turkish	13	tur	tur	
+tlh	Klingon			tlh	
+uig	Uyghur			uig	
+ukr	Ukrainian		ukr	ukr	
+urd	Urdu	20	urd	urd	
+uzb	Uzbek		uzb	uzb	
+vec	Venetian		vec	vec	
+vie	Vietnamese	17	vie	vie	
+vol	Volapük		vol	vol	
+war	Waray		war	war	
+wln	Walloon		wln	wln	
+xho	Xhosa			xho	
+yid	Yiddish		yid	yid	
+yor	Yoruba		yor	yor	
+cmn-hans	Mandarin Chinese (simplified)	1	zho	cmn	
+cmn-hant	Mandarin Chinese (traditional)	1	zho	cmn	
+zul	Zulu			zul	

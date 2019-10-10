@@ -46,7 +46,7 @@ class NanigoNetDatasetReader(DatasetReader):
             for line in f:
                 data = json.loads(line)
                 tokens = self._tokenizer.tokenize(data['text'])
-                tags = data['labels']
+                tags = data.get('labels')
 
                 yield self.text_to_instance(tokens, tags)
 
