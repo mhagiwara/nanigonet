@@ -9,3 +9,8 @@ with open('./languages.tsv') as f:
     for row in reader:
         data = dict(zip(header, row))
         LanguageInfo[data['id']] = data
+
+
+if __name__ == '__main__':
+    for lang_id, info in LanguageInfo.items():
+        print(lang_id, info)

@@ -33,7 +33,6 @@ def main():
         'html': 'html',
         'java': 'java',
         'js': 'js',
-        'json': 'js',
         'jsx': 'jsx',
         'm': 'm',
         'php': 'php',
