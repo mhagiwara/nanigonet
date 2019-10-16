@@ -33,7 +33,6 @@ def main():
         'html': 'html',
         'java': 'java',
         'js': 'js',
-        'jsx': 'jsx',
         'm': 'm',
         'php': 'php',
         'py': 'py',
@@ -44,8 +43,6 @@ def main():
         'swift': 'swift',
         'ts': 'ts',
         'xml': 'xml',
-        'yml': 'yml',
-        'yaml': 'yml',
     }
 
     lang_id_to_file = {}

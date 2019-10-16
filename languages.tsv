@@ -158,8 +158,7 @@ p	hs	Haskell
 p	html	HTML				
 p	java	Java				
 p	js	JavaScript				
-p	jsx	React				
-p	m	Objective C				
+p	m	Objective C
 p	php	PHP				
 p	py	Python				
 p	rb	Ruby				
@@ -169,4 +168,3 @@ p	sh	Shell Script
 p	swift	Swift				
 p	ts	TypeScript				
 p	xml	XML				
-p	yml	YAML				
