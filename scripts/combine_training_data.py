@@ -17,17 +17,25 @@ def main():
     for info in LanguageInfo.values():
         print(f"Combining training data for {info['id']} ...", file=sys.stderr)
 
-        if not os.path.exists(TRAIN_DIR / info['id']):
+        if info['type'] == 'h':
+            target_dir = TRAIN_DIR / info['id']
+        else:
+            target_dir = TRAIN_DIR / f"p-{info['id']}"
+
+        if not os.path.exists(target_dir):
             print(f"Directory for {info['id']} does not exist. Skipping.", file=sys.stderr)
             continue
 
-        combined_path = TRAIN_DIR / info['id'] / 'combined.txt'
+        combined_path = target_dir / 'combined.txt'
         if os.path.exists(combined_path):
             with open(combined_path) as f:
                 for line in f:
                     text = line.strip()
                     text = text + ' '  # add a whitespace to account for punctuation.
-                    lines_and_langs.append((text, info['id']))
+                    lines_and_langs.append((text, f"{info['type']}:{info['id']}"))
+        else:
+            print(f"The combined.txt file for for {info['id']} does not exist.", file=sys.stderr)
+            assert False
 
     # Second, shuffle them
     random.shuffle(lines_and_langs)

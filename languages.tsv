@@ -1,7 +1,7 @@
 type	id	name	rank	w2c	tatoeba	wikipedia
 h	afr	Afrikaans		afr	afr	
 h	amh	Amharic		amh	amh	
-h	ara	Arabic		ara	ara	
+h	ara	Arabic	3	ara	ara	
 h	arg	Aragonese		arg	arg	
 h	asm	Assamese			asm	
 h	ast	Asturian		ast	ast	
@@ -25,7 +25,7 @@ h	chv	Chuvash		chv	chv
 h	cos	Corsican		cos	cos	
 h	cym	Welsh		cym	cym	
 h	dan	Danish		dan	dan	
-h	deu	German		deu	deu	
+h	deu	German	16	deu	deu	
 h	div	Maldivian				https://dv.wikipedia.org/
 h	ell	Modern Greek (1453-)		ell	ell	
 h	eng	English	3	eng	eng	
@@ -35,7 +35,7 @@ h	eus	Basque		eus	eus
 h	fao	Faroese		fao	fao	
 h	fas	Persian		fas	pes	
 h	fin	Finnish		fin	fin	
-h	fra	French		fra	fra	
+h	fra	French	15	fra	fra	
 h	fry	Western Frisian		fry	fry	
 h	gla	Scottish Gaelic		gla	gla	
 h	gle	Irish		gle	gle	
@@ -69,7 +69,7 @@ h	kat	Georgian		kat	kat
 h	kaz	Kazakh		kaz	kaz	
 h	khm	Khmer			khm	
 h	kir	Kyrgyz			kir	
-h	kor	Korean		kor	kor	
+h	kor	Korean	14	kor	kor	
 h	kur	Kurdish		kur	kur	
 h	lat	Latin		lat	lat	
 h	lav	Latvian		lav	lvs	
@@ -125,7 +125,7 @@ h	srp	Serbian		srp	srp
 h	sun	Sundanese		sun	sun	
 h	swa	Swahili		swa	swh	
 h	swe	Swedish		swe	swe	
-h	tam	Tamil		tam	tam	
+h	tam	Tamil	18	tam	tam	
 h	tat	Tatar		tat	tat	
 h	tel	Telugu	11	tel	tel	
 h	tgk	Tajik		tgk	tgk	
@@ -136,10 +136,10 @@ h	tur	Turkish	13	tur	tur
 h	tlh	Klingon			tlh	
 h	uig	Uyghur			uig	
 h	ukr	Ukrainian		ukr	ukr	
-h	urd	Urdu		urd	urd	
+h	urd	Urdu	20	urd	urd	
 h	uzb	Uzbek		uzb	uzb	
 h	vec	Venetian		vec	vec	
-h	vie	Vietnamese		vie	vie	
+h	vie	Vietnamese	17	vie	vie	
 h	vol	Volapük		vol	vol	
 h	war	Waray		war	war	
 h	wln	Walloon		wln	wln	
@@ -158,7 +158,7 @@ p	hs	Haskell
 p	html	HTML				
 p	java	Java				
 p	js	JavaScript				
-p	m	Objective C
+p	m	Objective C				
 p	php	PHP				
 p	py	Python				
 p	rb	Ruby				
