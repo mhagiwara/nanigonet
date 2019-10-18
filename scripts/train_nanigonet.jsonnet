@@ -1,6 +1,7 @@
 {
     "dataset_reader": {
-        "type": "nanigonet"
+        "type": "nanigonet",
+        "max_token_len": 768
     },
     "train_data_path": "data/train.jsonl",
     "validation_data_path": "data/dev.jsonl",
@@ -10,11 +11,7 @@
     },
 
     "model": {
-        "type": "crf_tagger",
-        "constrain_crf_decoding": false,
-        "calculate_span_f1": false,
-        "dropout": 0.5,
-        "include_start_end_transitions": false,
+        "type": "simple_tagger",
 
         "text_field_embedder": {
             "tokens": {
@@ -34,14 +31,14 @@
     },
     "iterator": {
         "type": "bucket",
-        "batch_size": 96,
+        "batch_size": 128,
         "sorting_keys": [["tokens", "num_tokens"]]
     },
 
     "trainer": {
         "optimizer": {
             "type": "adam",
-            "lr": 0.0005
+            "lr": 0.002
         },
         "validation_metric": "+accuracy",
         "num_epochs": 100,
