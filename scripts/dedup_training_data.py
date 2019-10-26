@@ -11,13 +11,13 @@ TRAIN_DIR = Path('data/train')
 
 def get_num_lines_from_rank(rank):
     if not rank:
-        return 1000
+        return 2000
 
     rank = int(rank)
     if rank <= 10:
-        return 3000
+        return 6000
     elif 10 < rank <= 20:
-        return 2000
+        return 3000
 
 
 def get_deduped_lines(file_path, num_lines=1000):

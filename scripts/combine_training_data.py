@@ -76,8 +76,16 @@ def main():
             last_split_i = i
             last_split_j = j
 
-    # Finally, print out the results
+    # Fourth, add priority instances
+    weight = 5
+    with open(TRAIN_DIR / 'priority.txt') as f:
+        for line in f:
+            label, text = line[:-1].split(',', maxsplit=1)
+            labels = [label] * len(text)
+            for _ in range(weight):
+                dataset.append((text, labels))
 
+    # Finally, print out the results
     for text, labels in dataset:
         data = {
             'text': text,
