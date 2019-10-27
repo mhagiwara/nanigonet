@@ -18,8 +18,9 @@ def softmax(x, axis=None):
 
 
 class NanigoNet:
-    def __init__(self, model_path, top_k=3):
-        archive = load_archive(model_path)
+    def __init__(self, model_path, top_k=3, cuda_device=-1):
+        archive = load_archive(model_path,
+                               cuda_device=cuda_device)
 
         config = archive.config
         prepare_environment(config)
@@ -33,14 +34,9 @@ class NanigoNet:
         self._id_to_label = model.vocab.get_index_to_token_vocabulary(namespace='labels')
         self._top_k = top_k
 
-    def predict(self, text):
-        tokens = self._tokenizer.tokenize(text)
-        instance = Instance({'tokens': TextField(tokens, self._token_indexers)})
-
-        result = self.model.forward_on_instance(instance)
-
+    def _format_instance_result(self, instance_result):
         char_probs = []
-        probs = softmax(result['logits'], axis=-1)
+        probs = softmax(instance_result['logits'], axis=-1)
         for probs_per_char in probs:
             counter = Counter({self._id_to_label[label_id]: float(prob)
                                for label_id, prob in enumerate(probs_per_char)})
@@ -52,7 +48,30 @@ class NanigoNet:
 
         return {
             'char_probs': char_probs,
-            'probs': dict(counter.most_common(3)),
-            'tags': result['tags'],
-            'prediction': counter.most_common(1)[0][0]
+            'text_probs': dict(counter.most_common(self._top_k)),
+            'char_best': instance_result['tags'],
+            'text_best': counter.most_common(1)[0][0]
         }
+
+    def predict(self, text):
+        tokens = self._tokenizer.tokenize(text)
+        instance = Instance({'tokens': TextField(tokens, self._token_indexers)})
+
+        result = self.model.forward_on_instance(instance)
+
+        return self._format_instance_result(result)
+
+    def predict_batch(self, texts):
+        instances = []
+        for text in texts:
+            tokens = self._tokenizer.tokenize(text)
+            instance = Instance({'tokens': TextField(tokens, self._token_indexers)})
+            instances.append(instance)
+
+        result = self.model.forward_on_instances(instances)
+
+        results = []
+        for instance_result in result:
+            results.append(self._format_instance_result(instance_result))
+
+        return results
