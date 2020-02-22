@@ -58,8 +58,9 @@ class NanigoNet:
         instance = Instance({'tokens': TextField(tokens, self._token_indexers)})
 
         result = self.model.forward_on_instance(instance)
-
-        return self._format_instance_result(result)
+        result = self._format_instance_result(result)
+        result['text'] = text
+        return text
 
     def predict_batch(self, texts):
         instances = []
@@ -71,7 +72,9 @@ class NanigoNet:
         result = self.model.forward_on_instances(instances)
 
         results = []
-        for instance_result in result:
-            results.append(self._format_instance_result(instance_result))
+        for instance_result, text in zip(result, texts):
+            result = self._format_instance_result(instance_result)
+            result['text'] = text
+            results.append(result)
 
         return results
