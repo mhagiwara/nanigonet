@@ -60,7 +60,7 @@ class NanigoNet:
         result = self.model.forward_on_instance(instance)
         result = self._format_instance_result(result)
         result['text'] = text
-        return text
+        return result
 
     def predict_batch(self, texts):
         instances = []
